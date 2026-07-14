@@ -107,10 +107,12 @@
 
   <header>
     <h1>Privacy Policy</h1>
-    <p class="meta">App: Peel &amp; Stack &nbsp;·&nbsp; Effective date: <span class="edit">[Month Day, Year]</span> &nbsp;·&nbsp; Last updated: <span class="edit">[Month Day, Year]</span></p>
+    <p class="meta">App: Peel &amp; Stack &nbsp;·&nbsp; Effective date: July 14, 2026 &nbsp;·&nbsp; Last updated: July 14, 2026</p>
   </header>
 
-  <p>This Privacy Policy explains how <span class="edit">[Your Studio / Developer Name]</span> ("we", "us", "our") collects, uses, and shares information when you use the Peel &amp; Stack mobile application (the "App"), available on Google Play.</p>
+  <p>This Privacy Policy explains how sh00nya studios ("we", "us", "our") collects, uses, and shares information when you use the Peel &amp; Stack mobile application (the "App"), available on Google Play.</p>
+
+  <div class="callout">This App is directed at, or expected to be accessed by, children. It is built and operated to comply with the Children's Online Privacy Protection Act (COPPA) and Google Play's Families Policy Requirements — see Section 5. Before publishing, have this policy and your AdMob/Firebase configuration reviewed by someone familiar with COPPA compliance in your jurisdiction; the consequences of getting this wrong (FTC enforcement, Play Store removal) are more serious than for a general-audience app.</div>
 
   <p>By downloading, installing, or using the App, you agree to the collection and use of information as described in this Privacy Policy.</p>
 
@@ -119,7 +121,7 @@
 
   <h3>1.1 Device and Advertising Identifiers</h3>
   <ul>
-    <li>Advertising ID (e.g. Google Advertising ID / AAID) — used to serve and measure ads</li>
+    <li>Advertising ID (e.g. Google Advertising ID / AAID) — used to serve and measure ads for adult/general users only; <strong>not used for personalized or interest-based advertising to child users</strong> (see Section 5)</li>
     <li>Device type, operating system version, language, and general device settings</li>
     <li>IP address (used transiently for regional ad delivery and fraud prevention; not stored by us directly)</li>
   </ul>
@@ -179,16 +181,29 @@
 
   <h2>4. Advertising and Your Choices</h2>
   <ul>
-    <li>On first launch, the App presents a consent form (via Google's User Messaging Platform) where users in the EEA, UK, and other applicable regions can choose whether to allow personalized advertising.</li>
-    <li>You can reset or limit your device's advertising identifier at any time in your device settings: <strong>Android:</strong> Settings → Google → Ads → Delete advertising ID / Opt out of Ads Personalization.</li>
-    <li>Declining personalized ads does not stop ads from showing — you will still see non-personalized ads, which are necessary to support the free version of the App.</li>
+    <li>Because this App is directed at children, it is configured to serve <strong>only contextual, non-personalized advertising</strong> to all users, regardless of age — we do not rely on the standard adult consent-and-personalize flow for this App.</li>
+    <li>Our ad provider (Google AdMob) is configured with "child-directed treatment" (TFCD) and "under the age of consent" (TFUA) tags on every ad request, which instructs Google's ad systems not to use the advertising ID or any other identifier for interest-based or behavioral targeting.</li>
+    <li>Ad formats and the ad SDK used are limited to those certified under Google Play's Families Ads Program.</li>
+    <li>You can still reset your device's advertising identifier at any time: <strong>Android:</strong> Settings → Google → Ads → Delete advertising ID.</li>
   </ul>
 
   <h2>5. Children's Privacy</h2>
-  <p>The App is not directed at children under the age of 13 (or the relevant minimum age in your jurisdiction), and we do not knowingly collect personal information from children. <span class="edit">[If the App is classified in Google Play's "Designed for Families" program or otherwise expected to appeal to children, replace this section with COPPA/GDPR-K-compliant language and confirm your AdMob account is configured for child-directed treatment — this is a Play Store review requirement, not optional boilerplate.]</span></p>
+  <p>Peel &amp; Stack is directed at, or is likely to be accessed by, children under the age of 13, and we designed and operate it with that in mind. This section explains our practices under the U.S. Children's Online Privacy Protection Act (COPPA), the EU/UK's child-data provisions (GDPR/UK GDPR "GDPR-K"), and Google Play's Families Policy Requirements.</p>
+
+  <h3>5.1 What We Collect From Children</h3>
+  <p>We do not require account creation and do not knowingly collect a child's name, email address, photo, or precise location. The App may collect limited technical and gameplay information described in Section 1 (device type, coarse/non-precise diagnostics, in-app event data such as level progress) strictly to operate the App, fix bugs, and measure aggregate, non-personalized ad delivery.</p>
+
+  <h3>5.2 No Behavioral Advertising to Children</h3>
+  <p>We do not use any identifier collected from a child to build an advertising profile, track a child across apps or websites, or serve personalized/interest-based ads. All ad requests from this App are tagged as child-directed (see Section 4), and our ad partner is contractually and technically restricted from using the data for any purpose other than serving a contextual ad and basic fraud/frequency protection.</p>
+
+  <h3>5.3 Parental Rights</h3>
+  <p>If you are a parent or guardian and believe your child has provided us with information beyond what is described above, or you want to review, request deletion of, or refuse further collection of your child's information, contact us at the email in Section 10 and we will respond and take appropriate action, consistent with COPPA, without charging a fee.</p>
+
+  <h3>5.4 Google Play Families Policy</h3>
+  <p>This App is designed to comply with Google Play's Families Policy Requirements, including using only ad SDKs and analytics configurations certified for use in the Families program, and avoiding any feature (e.g. open-ended chat, external links without parental gates, or unrestricted web browsing) prohibited for apps in that category.</p>
 
   <h2>6. Data Retention</h2>
-  <p>Gameplay progress stored locally on your device persists until you uninstall the App or clear its data. Aggregated analytics and crash data are retained by our service providers according to their own retention schedules, typically <span class="edit">[e.g. 14 months for Firebase Analytics, per Google's default]</span>.</p>
+  <p>Gameplay progress stored locally on your device persists until you uninstall the App or clear its data. Aggregated analytics and crash data are retained by our service providers according to their own retention schedules, typically 14 months for Firebase Analytics event-level data, per Google's default retention setting.</p>
 
   <h2>7. Your Rights</h2>
   <p>Depending on your location, you may have rights under laws such as the GDPR (EEA/UK) or CCPA/CPRA (California) to access, correct, delete, or restrict processing of your information, and to object to or opt out of certain data uses, including the "sale" or "sharing" of data for targeted advertising. Because the App does not collect directly identifying information, most requests are best exercised through your device's advertising and privacy settings (Section 4). For any other request, contact us using the details in Section 10.</p>
@@ -202,16 +217,15 @@
   <h2>10. Contact Us</h2>
   <p>If you have questions about this Privacy Policy or how your information is handled, contact us at:</p>
   <p>
-    <span class="edit">[Your Studio / Developer Name]</span><br>
-    Email: <span class="edit">[privacy@yourdomain.com]</span><br>
-    <span class="edit">[Optional: postal address, if required in your jurisdiction]</span>
+    sh00nya studios<br>
+    Email: <a href="mailto:gignewgig@gmail.com">gignewgig@gmail.com</a>
   </p>
 
   <h2>11. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last updated" date at the top of this page. Continued use of the App after changes take effect constitutes acceptance of the revised policy.</p>
 
   <footer>
-    Peel &amp; Stack Privacy Policy — <span class="edit">[Your Studio / Developer Name]</span>
+    Peel &amp; Stack Privacy Policy — sh00nya studios
   </footer>
 
 </div>
